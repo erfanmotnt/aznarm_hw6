@@ -7,13 +7,13 @@ class PrototypeUnitTest {
     @Test
     void CloneTreesTest() {
         AppleTree appleTree = new AppleTree();
-        appleTree.height = 10;
-        appleTree.age = 5;
+        appleTree.setHeight(10);
+        appleTree.setAge(5);
 
         AppleTree anotherAppleTree = (AppleTree) appleTree.clone();
-        anotherAppleTree.height = 12;
+        anotherAppleTree.setHeight(12);
 
-        assertEquals(anotherAppleTree.age, 5);
-        assertEquals(anotherAppleTree.height, 12);
+        assertEquals(anotherAppleTree.getAge(), 5);
+        assertEquals(anotherAppleTree.getHeight(), 12);
     }
 }
