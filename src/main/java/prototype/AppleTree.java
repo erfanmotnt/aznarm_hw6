@@ -1,8 +1,14 @@
 package prototype;
 
 public class AppleTree extends Tree {
-    @Override
+
+    public AppleTree() {
+    }
+    public AppleTree(Tree target) {
+        super(target);
+    }
+
     public Tree clone() {
-        return null;
+        return new AppleTree(this);
     }
 }
