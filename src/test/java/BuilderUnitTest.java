@@ -1,3 +1,4 @@
+import builder.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -9,12 +10,12 @@ class BuilderUnitTest {
 
         MaleBuilder builder = new MaleBuilder();
         director.constructMale(builder);
-        Male male = director.getResult();
+        Male male = builder.getResult();
         assertNotNull(male);
 
         FemaleBuilder femaleBuilder = new FemaleBuilder();
         director.constructFemale(femaleBuilder);
-        Female female = director.getResult();
+        Female female = femaleBuilder.getResult();
         assertNotNull(female);
     }
 }
