@@ -3,13 +3,13 @@ package org.example;
 public class IranianGardenCreator implements AbstractGardenCreator {
     @Override
     public IranianFlower createFlower() {
-
-        return null;
+        IranianFlower flower = new IranianFlower();
+        return flower;
     }
 
     @Override
     public IranianTree createTree() {
-
-        return null;
+        IranianTree tree = new IranianTree();
+        return tree;
     }
 }
