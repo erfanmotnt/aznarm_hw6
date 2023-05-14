@@ -16,10 +16,10 @@ class AbstractFactoryUnitTest {
         IranianGardenCreator iranianGardenCreator = new IranianGardenCreator();
         JapaneseGardenCreator japaneseGardenCreator = new JapaneseGardenCreator();
 
-        IranianFlower iranianFlower = IranianGardenCreator.createIranianFlower();
-        IranianTree iranianTree = IranianGardenCreator.createIranianTree();
+        IranianFlower iranianFlower = iranianGardenCreator.createFlower();
+        IranianTree iranianTree = iranianGardenCreator.createTree();
 
-        JapaneseFlower japaneseFlower = japaneseGardenCreator.createJapaneseFlower();
-        JapaneseTree japaneseTree = japaneseGardenCreator.createJapaneseTree();
+        JapaneseFlower japaneseFlower = japaneseGardenCreator.createFlower();
+        JapaneseTree japaneseTree = japaneseGardenCreator.createTree();
     }
 }
