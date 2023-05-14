@@ -1,4 +1,4 @@
 package org.example;
 
-public class JapaneseFlower implements AbstractFlower {
+public class JapaneseFlower extends AbstractFlower {
 }

@@ -1,4 +1,4 @@
 package org.example;
 
-public interface AbstractFlower {
+public abstract class AbstractFlower {
 }

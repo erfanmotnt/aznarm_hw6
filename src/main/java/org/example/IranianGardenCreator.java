@@ -1,6 +1,6 @@
 package org.example;
 
-public class IranianGardenCreator implements AbstractGardenCreator {
+public class IranianGardenCreator extends AbstractGardenCreator {
     @Override
     public IranianFlower createFlower() {
         IranianFlower flower = new IranianFlower();
