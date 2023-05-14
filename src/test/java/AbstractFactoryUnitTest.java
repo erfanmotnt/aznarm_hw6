@@ -4,6 +4,8 @@ import org.example.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 class AbstractFactoryUnitTest {
     @Test
     void CreateNewGArdenCreator() {
@@ -21,5 +23,11 @@ class AbstractFactoryUnitTest {
 
         JapaneseFlower japaneseFlower = japaneseGardenCreator.createFlower();
         JapaneseTree japaneseTree = japaneseGardenCreator.createTree();
+
+        assertNotNull(iranianFlower);
+        assertNotNull(iranianTree);
+        assertNotNull(japaneseFlower);
+        assertNotNull(japaneseTree);
+
     }
 }
