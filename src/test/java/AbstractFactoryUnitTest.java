@@ -11,4 +11,16 @@ class AbstractFactoryUnitTest {
         IranianGardenCreator iranianGardenCreator = new IranianGardenCreator();
         JapaneseGardenCreator japaneseGardenCreator = new JapaneseGardenCreator();
     }
+
+    @Test
+    void CallAllCreators() {
+        IranianGardenCreator iranianGardenCreator = new IranianGardenCreator();
+        JapaneseGardenCreator japaneseGardenCreator = new JapaneseGardenCreator();
+
+        IranianFlower iranianFlower = IranianGardenCreator.createIranianFlower();
+        IranianTree iranianTree = IranianGardenCreator.createIranianTree();
+
+        JapaneseFlower japaneseFlower = japaneseGardenCreator.createJapaneseFlower();
+        JapaneseTree japaneseTree = japaneseGardenCreator.createJapaneseTree();
+    }
 }
