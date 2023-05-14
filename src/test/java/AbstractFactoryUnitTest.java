@@ -1,5 +1,3 @@
-package com.mechanitis.demo.junit5;
-
 import org.example.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
