@@ -1,8 +1,24 @@
 package prototype;
 
 public abstract class Tree {
-    public int height;
-    public int age;
+    private int height;
+    private int age;
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public int getHeight() {
+        return height;
+    }
 
     public Tree() {
     }
